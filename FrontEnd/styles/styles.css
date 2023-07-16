@@ -1,0 +1,122 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+body {
+  background-color: #2C4251;
+}
+body #highlightsSection {
+  height: 35%; /* El alto del div es el 35% de la altura de la pantalla */
+  background-image: url("../../Materiales/Imagenes/Fondos/minecraftTrailsAndTales.jpeg"); /* La imagen que quieres poner de fondo */
+  background-size: cover;
+  background-position: center; /* La imagen se centra en el div */
+  background-repeat: no-repeat; /* La imagen no se repite */
+}
+body #highlightsSection h1 {
+  padding: 13rem;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5%;
+}
+
+#topBar {
+  background-color: #2C4251;
+  height: 5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#topBar #logo {
+  height: 3rem;
+  float: left;
+  margin-left: 15%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#topBar #logo img {
+  height: 100%;
+  width: 100%;
+}
+#topBar #list {
+  display: inline-block;
+  text-align: right;
+  margin-right: 15%;
+  margin-top: 1rem;
+  float: right;
+}
+#topBar #list ul {
+  display: inline-block;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#topBar #list ul li {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+#topBar #list ul li a {
+  font-family: Josefin Sans, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-bottom: 1px solid #2C4251;
+  transition: all 0.3s;
+  position: relative;
+}
+#topBar #list ul li a:hover {
+  color: #2191FB;
+  border-color: #2191FB;
+  animation: grow 0.3s linear;
+  animation-fill-mode: forwards;
+}/*# sourceMappingURL=styles.css.map */

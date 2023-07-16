@@ -1,0 +1,20 @@
+body{
+    background-color: $charcoal;
+
+    #highlightsSection{
+        height: 35%; /* El alto del div es el 35% de la altura de la pantalla */
+        background-image: url("../../Materiales/Imagenes/Fondos/minecraftTrailsAndTales.jpeg"); /* La imagen que quieres poner de fondo */
+        background-size: cover;
+        background-position: center; /* La imagen se centra en el div */
+        background-repeat: no-repeat; /* La imagen no se repite */
+        h1{
+            padding: 13rem;
+            color: white;
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 5%;
+        }
+
+    }
+}
