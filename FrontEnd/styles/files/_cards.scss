@@ -1,0 +1,102 @@
+#cardNew {
+  width: 300px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  height: 100%;
+
+  img{
+    width: 100%;
+    height: auto;
+    filter: brightness(0.5);
+    transition: transform 0.5s ease-in-out, filter 0.3s ease-in-out;
+
+    &:hover{
+      filter: brightness(1);
+    }
+  }
+
+  #cardsNewContent {
+    flex-grow: 1;
+    margin: 1rem; /* Ocupa el espacio disponible */
+    margin-bottom: 1rem;
+
+    h2{
+      color: #333;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-family: josefin-sans, sans-serif;
+    }
+
+    .date{
+      font-size: 0.6rem;
+      color: #999;
+      font-family: josefin-sans, sans-serif;
+      font-weight: lighter;
+    }
+    
+    p{
+      color: $charcoal;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      font-family: josefin-sans, sans-serif;
+      font-weight: 700;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      margin-bottom: 1rem;
+    }
+
+    #cardsNewsBottom{
+      text-align: right;
+
+      a{
+        color: #007bff;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease-in-out;
+        font-family: josefin-sans, sans-serif;
+        font-size: 0.8rem;
+
+        &:hover{
+          color: #0056b3;
+        }
+      }
+    }
+  }
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+
+  &:hover{
+    transform: scale(1.04);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+
+    &::before{
+      border-color: #007bff;
+      opacity: 1;
+    }
+  }
+
+}

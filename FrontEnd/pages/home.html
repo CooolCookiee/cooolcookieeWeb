@@ -6,80 +6,150 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
-<body>
-    <nav id="topBar">
+    <body>
+        <nav id="topBar">
         <img id="logo" src="../../Materiales/Imagenes/Logo/logoBlanco.png" alt="">
         <div id="list">
-            <ul>
-                <li><a href="news.html">Noticias</a></li>
-                <li><a href="videos.html">Vídeos</a></li>
-                <li><a href="about.html">Sobre mí</a></li>
-            </ul>
+        <ul>
+            <li><a href="news.html">Noticias</a></li>
+            <li><a href="videos.html">Vídeos</a></li>
+            <li><a href="about.html">Sobre mí</a></li>
+        </ul>
         </div>
-    </nav>
-    <section>
-        <div id="highlightsSection">
-            <h1>Minecraft Trails and Tales</h1>
+        <div class="menuToggle" id="menuDos">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu" id="menuContent">
+        <ul>
+            <li><a href="news.html">Noticias</a></li>
+            <li><a href="videos.html">Vídeos</a></li>
+            <li><a href="about.html">Sobre mí</a></li>
+        </ul>
+        </div>
+    </nav>  
+    <section id="highlightsSection">
+        <div id="highlightsDiv">
+            <img id="img" src="../../Materiales/Imagenes/Fondos/minecraftTrailsAndTales.jpeg" alt="">
+            <h1>Destacado</h1>
         </div>
     </section>
     <section id="newsSection">
         <div>
             <h1>Noticias</h1>
-            <div id="cardsNews">
-                <div id="cardNews">
-                    <img src="../Materiales/Imagenes/Noticias/Noticia1.jpg" alt="">
-                    <h2>Noticia 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                    <a href="news.html">Leer más</a>
+            <div id="cardsNewsGroup">
+                <div id="cardNew">
+                    <img src="../../Materiales/Imagenes/Noticias/Noticia1.jpg" alt="">
+                    <div id="cardsNewContent">
+                        <h2>Noticia 1</h2>
+                        <span class="date">Publicado el 16 de julio, 2023</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                        <div id="cardsNewsBottom">
+                            <a href="news.html">Leer más</a>
+                        </div>
+                    </div>
                 </div>
-                <div id="cardNews">
-                    <img src="../Materiales/Imagenes/Noticias/Noticia1.jpg" alt="">
-                    <h2>Noticia 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                    <a href="news.html">Leer más</a>
+                <div id="cardNew">
+                    <img src="../../Materiales/Imagenes/Noticias/Noticia1.jpg" alt="">
+                    <div id="cardsNewContent">
+                        <h2>Noticia 1</h2>
+                        <span class="date">Publicado el 16 de julio, 2023</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                        <div id="cardsNewsBottom">
+                            <a href="news.html">Leer más</a>
+                        </div>
+                    </div>
                 </div>
-                <div id="cardNews">
-                    <img src="../Materiales/Imagenes/Noticias/Noticia1.jpg" alt="">
-                    <h2>Noticia 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                    <a href="news.html">Leer más</a>
+                <div id="cardNew">
+                    <img src="../../Materiales/Imagenes/Noticias/Noticia1.jpg" alt="">
+                    <div id="cardsNewContent">
+                        <h2>Noticia 1</h2>
+                        <span class="date">Publicado el 16 de julio, 2023</span>
+                        <p>Nam inventore ut quia voluptate nemo. Nulla tenetur sed accusamus ex possimus provident eligendi ut nihil. Atque reprehenderit maiores tempora.</p>
+                        <div id="cardsNewsBottom">
+                            <a href="news.html">Leer más</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="videosSection">
         <div>
-            <h1>Videos</h1>
-            <div id="cardsVideos">
-                <div id="cardVideo">
-                    <img src="../Materiales/Imagenes/Videos/Video1.jpg" alt="">
-                    <h2>Video 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                    <a href="videos.html">Ver más</a>
-                </div>
-                <div id="cardVideo">
-                    <img src="../Materiales/Imagenes/Videos/Video1.jpg" alt="">
-                    <h2>Video 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                    <a href="videos.html">Ver más</a>
-                </div>
-                <div id="cardVideo">
-                    <img src="../Materiales/Imagenes/Videos/Video1.jpg" alt="">
-                    <h2>Video 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-                    <a href="videos.html">Ver más</a>
-                </div>
-        </div>
-    </section>
-    <section id="aboutSection">
-        <div>
-            <h1>Hola</h1>
-            <div>
-                <h1>Soy</h1>
-                <h1 id="CooolCookiee">CooolCookiee</h1>
+          <h1>Videos</h1>
+          <div id="cardsVideos">
+            <div class="cardVideo">
+              <img src="../../Materiales/Imagenes/Videos/video1.jpg" alt="">
+              <h2>Video 1</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+              <a href="videos.html">Ver más</a>
             </div>
-            <p>Creador de contenido</p>
+            <div class="cardVideo">
+              <img src="../../Materiales/Imagenes/Videos/video1.jpg" alt="">
+              <h2>Video 2</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+              <a href="videos.html">Ver más</a>
+            </div>
+            <div class="cardVideo">
+              <img src="../../Materiales/Imagenes/Videos/video1.jpg" alt="">
+              <h2>Video 3</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+              <a href="videos.html">Ver más</a>
+            </div>
+            <div class="cardVideo">
+              <img src="../../Materiales/Imagenes/Videos/video1.jpg" alt="">
+              <h2>Video 1</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+              <a href="videos.html">Ver más</a>
+            </div>
+            <div class="cardVideo">
+              <img src="../../Materiales/Imagenes/Videos/video1.jpg" alt="">
+              <h2>Video 2</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+              <a href="videos.html">Ver más</a>
+            </div>
+            <div class="cardVideo">
+              <img src="../../Materiales/Imagenes/Videos/video1.jpg" alt="">
+              <h2>Video 3</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+              <a href="videos.html">Ver más</a>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+      <section id="aboutSection">
+        <div>
+          <h1>Hola, soy</h1>
+          <div>
+            <img src="../../Materiales/Imagenes/Logo/logoCafe.png" alt="">
+          </div>
+          <p>Creador de contenido</p>
+        </div>
+      </section>
+    <footer>
+      <div class="footer-container">
+        <div class="social-media">
+          <a href="https://www.tiktok.com/@cooolcookiee" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="https://www.twitter.com/cooolcookiee" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/cooolcookiee" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/c/cooolcookiee" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="https://www.twitch.tv/cooolcookiee" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-twitch"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/cardVideo.js"></script>
+    <script src="https://kit.fontawesome.com/ecafa15c57.js" crossorigin="anonymous"></script>
 </body>
 </html>
